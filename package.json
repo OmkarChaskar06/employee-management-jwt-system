@@ -4,6 +4,8 @@
   "description": "Full-stack Employee Management Web Application with JWT Authentication",
   "scripts": {
     "setup": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run setup && npm run build --prefix client",
+    "start": "node server/index.js",
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
     "seed": "npm run seed --prefix server",
